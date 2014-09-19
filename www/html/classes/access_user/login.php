@@ -25,7 +25,7 @@ $error = $my_access->the_msg;
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <title>Sign in</title>
-<link rel="stylesheet" type="text/css" href="/html/css/main.css"/>
+<link rel="stylesheet" type="text/css" href="/css/main.css"/>
 </head>
 
 <body>

@@ -7,7 +7,7 @@ require($_SERVER['DOCUMENT_ROOT']."/classes/access_user/db_config.php");
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <title>Log out page</title>
-<link rel="stylesheet" type="text/css" href="/html/css/main.css"/>
+<link rel="stylesheet" type="text/css" href="/css/main.css"/>
 </head>
 
 <body>

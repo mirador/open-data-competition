@@ -16,7 +16,7 @@ if (isset($_GET['action']) && $_GET['action'] == "log_out") {
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <title>Account page</title>
-<link rel="stylesheet" type="text/css" href="/html/css/main.css"/>
+<link rel="stylesheet" type="text/css" href="/css/main.css"/>
 </head>
 
 <body>
