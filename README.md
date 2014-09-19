@@ -8,9 +8,8 @@
 
 3) [Configure network](https://help.ubuntu.com/14.04/serverguide/network-configuration.html) (static IP, domain name, etc).
 
-4) Install and configure fail2ban
-https://www.digitalocean.com/community/tutorials/how-to-install-and-use-fail2ban-on-ubuntu-14-04
-to lock out users repeatedly trying to login
+4) Install and configure [fail2ban]
+(https://www.digitalocean.com/community/tutorials/how-to-install-and-use-fail2ban-on-ubuntu-14-04) to lock out users repeatedly trying to login
 
 5) Install and configure [logwatch](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-logwatch-log-analyzer-and-reporter-on-a-vps) to get daily reports of system logs
 
@@ -24,7 +23,7 @@ to lock out users repeatedly trying to login
 In what follows, the instructions assume that you are using AMMPPS on MacOSX. Open AMMPPS 
 up and start  Apache and mySQL, [phpMyAdmin](http://localhost/phpmyadmin) should work in the browser.
 
-2) Copy the contents of html into <AMPPS folder>/www
+2) Copy the contents of www/html into /Applications/AMPPS/www
 
 3) Open a terminal and set the path to the mySQL binary distribution inside AMPPS:
 
@@ -113,8 +112,11 @@ mysql -u root -p
 ```
 
 6) create the "access_user_db" database:
+
+```mysql
 create database access_user_db;
 use access_user_db;
+```
 
 7) Create all required databases by running the sql scripts:
 
