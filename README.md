@@ -103,7 +103,14 @@ define ("DB_PASSWORD", "password");
 DB_SERVER should remain as localhost, even for the live version of the server, the only 
 change needed is for DB_PASSWORD, which should be the root password of MySQL. 
 
-4) Change to folder containing the mySQL scripts, which should be /var/www/classes/sql_scripts
+4) Change to folder containing the mySQL scripts, which should be /var/www/classes/sql_scripts.
+A better alternative to copy the files is to create a symbolic link /Applications/AMPPS/www 
+(delete the original www folder in AMPPS first) to the html folder inside the local repo, 
+in this way any changes can be tested immediately and keep under revision control:
+
+```bash
+ln -s <path_to_local_repo>/www/html /Applications/AMPPS/www
+```
 
 5) run mysql as root:
 
