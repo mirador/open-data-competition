@@ -61,7 +61,7 @@ if (isset($_POST['Submit'])) {
 	  <div>
 		<label for="password">Password:</label>
  -->		
-     <input name="password" placeholder="Password" size="50" value="" type="password" value="">
+     <input name="password" placeholder="New password" size="50" value="" type="password" value="">
      <br>
 <!-- 	  </div>
 	  <div>
@@ -94,9 +94,9 @@ if (isset($_POST['Submit'])) {
 		<br>
 		<input type="hidden" name="id" value="<?php echo  $update_profile->profile_id; ?>">
 		<input type="submit" name="Submit" value="Update">
-
-		<h1><a href="<?php echo $update_profile->main_page; ?>">Go back</a></h1>
 	  </div>
+	  <br>
+	  <a href="<?php echo $update_profile->main_page; ?>">Go back</a>
 	</form>
  </div>
 

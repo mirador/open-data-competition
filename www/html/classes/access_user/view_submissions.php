@@ -113,6 +113,7 @@ if (isset($_POST['Submit'])) {
     ?>    	  
 	  </div>
 
+    <br>
     <a href="<?php echo $view_submission->main_page; ?>">Go back</a>
     <!-- <p><a href="<?php echo $view_submission->main_page; ?>">Go back</a></p> -->
 
