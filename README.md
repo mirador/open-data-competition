@@ -23,7 +23,15 @@
 In what follows, the instructions assume that you are using AMMPPS on MacOSX. Open AMMPPS 
 up and start  Apache and mySQL, [phpMyAdmin](http://localhost/phpmyadmin) should work in the browser.
 
-2) Copy the contents of www/html into /Applications/AMPPS/www
+2) Copy the contents of www/html into /Applications/AMPPS/www. A better alternative to copy the files 
+is to create a symbolic link /Applications/AMPPS/www (delete the original www folder in AMPPS first) to 
+the html folder inside the local repo, in this way any changes can be tested immediately and keep under 
+revision control:
+
+```bash
+ln -s <path_to_local_repo>/www/html /Applications/AMPPS/www
+```
+
 
 3) Open a terminal and set the path to the mySQL binary distribution inside AMPPS:
 
@@ -103,14 +111,7 @@ define ("DB_PASSWORD", "password");
 DB_SERVER should remain as localhost, even for the live version of the server, the only 
 change needed is for DB_PASSWORD, which should be the root password of MySQL. 
 
-4) Change to folder containing the mySQL scripts, which should be /var/www/classes/sql_scripts.
-A better alternative to copy the files is to create a symbolic link /Applications/AMPPS/www 
-(delete the original www folder in AMPPS first) to the html folder inside the local repo, 
-in this way any changes can be tested immediately and keep under revision control:
-
-```bash
-ln -s <path_to_local_repo>/www/html /Applications/AMPPS/www
-```
+4) Change to folder containing the mySQL scripts, which should be /var/www/classes/sql_scripts
 
 5) run mysql as root:
 
