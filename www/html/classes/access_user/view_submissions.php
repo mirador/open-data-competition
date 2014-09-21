@@ -65,11 +65,19 @@ if (isset($_POST['Submit'])) {
 	<p style="color:#FF0000;font-weight:bold;"><?php echo $update_profile->the_msg; ?>&nbsp;</p>
  -->	
 	<form name="form1" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">	  
-	  <?php 	  
+	  <?php
+      if ($view_submission->count == 0) {
+          echo '<p>Nothing sumbitted yet...</p>';
+          return;
+      }       
+      if (3 < $view_submission->count) {
+        echo '<p>You can select up to 3 submissions to be evaluated by the jury, please select using checkboxes.</p>';
+      }
+
       echo '<table>';
       echo '<tr>';
       $i = 0;     
-      if (1 < $view_submission->count) echo '<th>SELECTED</th>';
+      if (3 < $view_submission->count) echo '<th>SELECTED</th>';
       echo '<th>DATASET</th>';
       echo '<th>VARIABLE 1</th>';
       echo '<th>VARIABLE 2</th>';
@@ -78,7 +86,7 @@ if (isset($_POST['Submit'])) {
      
       while ($i < $view_submission->count) {
         echo '<tr>';
-        if (1 < $view_submission->count) {
+        if (3 < $view_submission->count) {
           $checked = '';
           if ($view_submission->selected_array[$i]) {
             $checked = 'checked';
@@ -95,12 +103,17 @@ if (isset($_POST['Submit'])) {
       echo '</table>';
 	  ?>
 
-      <br>
-      <div name="menu">
-	  <!-- <label for="Submit">Submit</label> -->
-	  <input type="submit" name="Submit" value="Update">
-	  <h1><a href="<?php echo $view_submission->main_page; ?>">Go back</a></h1>
+    <br>
+    <div name="menu">
+    <?php
+      if (3 < $view_submission->count) {
+	      echo '<input type="submit" name="Submit" value="Update">';
+      }
+    ?>    	  
 	  </div>
+
+    <a href="<?php echo $view_submission->main_page; ?>">Go back</a>
+    <!-- <p><a href="<?php echo $view_submission->main_page; ?>">Go back</a></p> -->
 
 <!-- 	  <div>
 		<label for="Submit">&gt;&gt;</label>
