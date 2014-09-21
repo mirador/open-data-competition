@@ -72,6 +72,7 @@ if (isset($_POST['Submit'])) {
       }       
       if (3 < $view_submission->count) {
         echo '<p>You can select up to 3 submissions to be evaluated by the jury, please select using checkboxes.</p>';
+        echo '<br>';
       }
 
       echo '<table>';
