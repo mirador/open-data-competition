@@ -19,29 +19,48 @@ $error = $act_password->the_msg;
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<title>Example new Passwort activation</title>
+<title>Reset password</title>
+<link rel="stylesheet" type="text/css" href="/css/main.css"/>
 </head>
 
 <body>
-<?php if (isset($_SESSION['activation'])) { ?>
-<h2>Enter your new password:</h2>
-<p>Enter here your new password, (login: <b><?php echo $act_password->user; ?></b>).</p>
-<form name="form1" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-  <label for="password"><b>(new)</b> Password:</label>
-  <input type="password" name="password" value="<?php echo (isset($_POST['password'])) ? $_POST['password'] : ""; ?>">
-  <label for="confirm">Confirm password:</label>
-  <input type="password" name="confirm" value="<?php echo (isset($_POST['confirm'])) ? $_POST['confirm'] : ""; ?>">
-  <input type="hidden" name="user" value="<?php echo $act_password->user; ?>">
-  <input type="submit" name="Submit">
-</form>
-<?php } else { ?>
-<h2>Att. !</h2>
-<?php } ?>
-<p style="color:#FF0000;"><b><?php echo (isset($error)) ? $error : "&nbsp;"; ?></b></p>
-<p>&nbsp;</p>
-<!-- Notice! you have to change this links here, if the files are not in the same folder -->
-<p><a href="<?php echo $act_password->login_page; ?>">Login</a></p>
+<div id="main-con">
+  <div id="header-con">
+    <div id="img"></div>
+    <div id="title"><h1>mirador</h1></div>
+  </div>  
+  <div id="intro" class="basic">
+  </div>  
+
+  <div id="body-con" class="basic">
+    <?php if (isset($_SESSION['activation'])) { ?>
+    <h2>Enter your new password:</h2>
+    <!-- <p>Enter here your new password, (login: <b><?php echo $act_password->user; ?></b>).</p> -->
+    <form name="form1" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+
+      <!-- <label for="password"><b>(new)</b> Password:</label> -->
+      <input name="password" placeholder="New password" type="password" size="50" value="<?php echo (isset($_POST['password'])) ? $_POST['password'] : ""; ?>">
+      <br>
+
+      <!-- <label for="confirm">Confirm password:</label> -->
+      <input name="confirm" placeholder="Confirm password" type="password" size="50" value="<?php echo (isset($_POST['confirm'])) ? $_POST['confirm'] : ""; ?>">
+      <br>
+
+      <input type="hidden" name="user" value="<?php echo $act_password->user; ?>">
+      <input type="submit" name="Submit" value="Change">
+    </form>
+    <?php } else { ?>
+    <h2>Att. !</h2>
+    <?php } ?>
+    <p style="color:#FF0000;"><b><?php echo (isset($error)) ? $error : "&nbsp;"; ?></b></p>
+    <p>&nbsp;</p>
+    <!-- Notice! you have to change this links here, if the files are not in the same folder -->
+    <p><a href="<?php echo $act_password->login_page; ?>">Login</a></p>
+  </div>
+
+</div>
 </body>
 </html>

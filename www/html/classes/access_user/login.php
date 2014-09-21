@@ -63,13 +63,11 @@ $error = $my_access->the_msg;
     <p>&nbsp;</p>
 
     <!-- Notice! you have to change this links here, if the files are not in the same folder -->
-    <!--
     <p>Not registered yet? <a href="./register.php">Click here.</a></p>
     <p><a href="./forgot_password.php">Forgot your password?</a></p>
-    <p><a href="login_local.php">Login with messages according user's language settings </a><br>(only for users with a profile)</p>
-     -->
+    <!-- <p><a href="login_local.php">Login with messages according user's language settings </a><br>(only for users with a profile)</p> -->
 
-  </div>  
+  </div>
 </div>
 </body>
 </html>
