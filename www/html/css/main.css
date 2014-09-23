@@ -322,6 +322,9 @@ body #main-con #body-con #manual-contents .section#guideline {
   height: 340px;
   min-width: 700px;
 }
+body #main-con #body-con #manual-contents .section#datasets {
+  height: 390px;
+}
 body #main-con #body-con #manual-contents .section .datasets {
   float: left;
   width: 200px;
@@ -336,30 +339,6 @@ body #main-con #body-con #manual-contents .section .datasets {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
-}
-body #main-con #body-con #manual-contents .section .datasets:hover {
-  -webkit-box-shadow: 0px 0px 5px 5px rgba(30, 20, 0, 0.1);
-  -moz-box-shadow: 0px 0px 5px 5px rgba(30, 20, 0, 0.1);
-  box-shadow: 0px 0px 5px 5px rgba(30, 20, 0, 0.1);
-}
-body #main-con #body-con #manual-contents .section .datasets h4 {
-  font-family: MerriLight;
-  font-size: 18px;
-  padding: 0 10px;
-  color: rgba(30, 20, 0, 0.8);
-}
-body #main-con #body-con #manual-contents .section .datasets h1 {
-  font-family: RoboReg;
-  font-size: 14px;
-  text-align: center;
-  text-transform: uppercase;
-  width: 100%;
-  margin-top: 15px;
-  position: absolute;
-  bottom: 0px;
-  line-height: 50px;
-  color: white;
 }
 body #main-con #body-con #manual-contents .section .datasets .color {
   width: 100%;
@@ -367,17 +346,65 @@ body #main-con #body-con #manual-contents .section .datasets .color {
   position: absolute;
   top: 0px;
 }
-body #main-con #body-con #manual-contents .section .datasets#health .color,
-body #main-con #body-con #manual-contents .section .datasets#health h1 {
+body #main-con #body-con #manual-contents .section .datasets#health .color {
   background: #009b7b;
 }
-body #main-con #body-con #manual-contents .section .datasets#sports .color,
-body #main-con #body-con #manual-contents .section .datasets#sports h1 {
+body #main-con #body-con #manual-contents .section .datasets#health2 .color {
+  background: #00b82d;
+}
+body #main-con #body-con #manual-contents .section .datasets#sports .color {
   background: #2a528b;
 }
-body #main-con #body-con #manual-contents .section .datasets#global .color,
-body #main-con #body-con #manual-contents .section .datasets#global h1 {
+body #main-con #body-con #manual-contents .section .datasets#global .color {
   background: #880106;
+}
+body #main-con #body-con #manual-contents .section .datasets#health .data-button:hover {
+  background: #009b7b;
+}
+body #main-con #body-con #manual-contents .section .datasets#health2 .data-button:hover {
+  background: #00b82d;
+}
+body #main-con #body-con #manual-contents .section .datasets#sports .data-button:hover {
+  background: #2a528b;
+}
+body #main-con #body-con #manual-contents .section .datasets#global .data-button:hover {
+  background: #880106;
+}
+body #main-con #body-con #manual-contents .section .datasets h4 {
+  font-family: MerriLight;
+  font-size: 18px;
+  padding: 0 10px;
+  color: rgba(30, 20, 0, 0.8);
+}
+body #main-con #body-con #manual-contents .section .datasets a {
+  cursor: pointer;
+  color: white;
+}
+body #main-con #body-con #manual-contents .section .datasets a:hover {
+  color: white;
+  text-decoration: none;
+}
+body #main-con #body-con #manual-contents .section .datasets a h1 {
+  font-family: RoboReg;
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  padding: 10px 0;
+  color: white;
+}
+body #main-con #body-con #manual-contents .section .datasets .data-buttons {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+body #main-con #body-con #manual-contents .section .datasets .data-buttons .data-button {
+  float: left;
+  background: rgba(30, 20, 0, 0.3);
+  width: 50%;
+}
+body #main-con #body-con #manual-contents .section .datasets .data-buttons .data-button.about h1 {
+  border-left: 1px solid white;
 }
 body #main-con #body-con #instructions {
   width: 48%;

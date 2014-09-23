@@ -359,6 +359,9 @@ body {
 						height: 340px;
 						min-width: 700px;
 					}
+					&#datasets {
+						height: 390px;
+					}
 					.datasets {
 						float: left;
 						width: 200px;
@@ -368,42 +371,77 @@ body {
 						.shadow();
 						position: relative;
 						.ease();
-						cursor: pointer;
-						&:hover {
-							.shadow(0px, 0px, 5px, 5px)
-						}
-						h4 {
-							font-family: MerriLight;
-							font-size: 18px;
-							padding: 0 10px;
-							color: fade(@warm, 80%);
-						}
-						h1 {
-							font-family: RoboReg;
-							font-size: 14px;
-							text-align: center;
-							text-transform: uppercase;
-							width: 100%;
-							margin-top: 15px;
-							position: absolute;
-							bottom: 0px;
-							line-height: 50px;
-							color: white;
-						}
+						// .shadow(0px, 0px, 5px, 5px);
+
 						.color {
 							width: 100%;
 							height: 5px;
 							position: absolute;
 							top: 0px;
 						}
-						&#health .color, &#health h1 {
+						&#health .color {
 							background: rgb(0, 155, 123);
 						}
-						&#sports .color, &#sports h1 {
+						&#health2 .color {
+							background: rgb(0,184,45);
+						}
+						&#sports .color {
 							background: rgb(42, 82, 139);
 						}
-						&#global .color, &#global h1 {
+						&#global .color {
 							background: rgb(136, 1, 6);
+						}
+						 
+						&#health .data-button:hover {
+							background: rgb(0, 155, 123);
+						}
+						&#health2 .data-button:hover {
+							background: rgb(0,184,45);
+						}
+						&#sports .data-button:hover {
+							background: rgb(42, 82, 139);
+						}
+						&#global .data-button:hover {
+							background: rgb(136, 1, 6);
+						}
+						
+						h4 {
+							font-family: MerriLight;
+							font-size: 18px;
+							padding: 0 10px;
+							color: fade(@warm, 80%);
+						}
+						a {
+							cursor: pointer;
+							color: white;
+							&:hover {
+								color: white;
+								text-decoration: none;
+							}
+							h1 {
+								font-family: RoboReg;
+								font-size: 14px;
+								text-align: center;
+								margin: 0;
+								width: 100%;
+								padding: 10px 0;
+								color: white;
+							}
+						}
+						.data-buttons {
+							position: absolute;
+							bottom: 0;
+							width: 100%;
+							.data-button {
+								// border: 1px solid red;
+								float: left;
+								background: fade(@warm, 30%);
+								width: 50%;
+								// height: 50px;
+								&.about h1{
+									border-left: 1px solid white;
+								}
+							}
 						}
 					}
 				}

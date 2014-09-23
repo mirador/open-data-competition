@@ -96,7 +96,7 @@ if (isset($_POST['Submit'])) {
 		<input type="submit" name="Submit" value="Update">
 	  </div>
 	  <br>
-	  <a href="<?php echo $update_profile->main_page; ?>">Go back</a>
+	  <a href="<?php echo $update_profile->main_page; ?>"><div class="user-account secondary">Go back</div></a>
 	</form>
  </div>
 
