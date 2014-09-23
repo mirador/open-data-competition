@@ -79,29 +79,29 @@ b {
 ul,
 ol {
   padding-left: 25px;
-} 
-table, 
-th, 
+}
+table,
+th,
 td {
-    font-family: RoboReg;
-    font-style: normal;
-    font-weight: normal;  
-    font-size: 12px;
-    color: rgba(0, 0, 0, 0.5);  
-    border: 1px solid #d2d0cc;
-    border-collapse: collapse;
+  font-family: RoboReg;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #d2d0cc;
+  border-collapse: collapse;
 }
 th,
 td {
-    padding: 15px;
+  padding: 15px;
 }
 th {
   font-family: RoboBold;
   font-style: normal;
-  font-weight: normal;  
+  font-weight: normal;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.5);
-  background-color: #d2d0cc;  
+  background-color: #d2d0cc;
   text-align: left;
 }
 html {
@@ -272,7 +272,7 @@ body #main-con #body-con #manual-contents .section#guideline {
   height: 340px;
   min-width: 700px;
 }
-body #main-con #body-con #manual-contents .section .category {
+body #main-con #body-con #manual-contents .section .datasets {
   float: left;
   width: 200px;
   height: 200px;
@@ -288,18 +288,18 @@ body #main-con #body-con #manual-contents .section .category {
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
-body #main-con #body-con #manual-contents .section .category:hover {
+body #main-con #body-con #manual-contents .section .datasets:hover {
   -webkit-box-shadow: 0px 0px 5px 5px rgba(30, 20, 0, 0.1);
   -moz-box-shadow: 0px 0px 5px 5px rgba(30, 20, 0, 0.1);
   box-shadow: 0px 0px 5px 5px rgba(30, 20, 0, 0.1);
 }
-body #main-con #body-con #manual-contents .section .category h4 {
+body #main-con #body-con #manual-contents .section .datasets h4 {
   font-family: MerriLight;
   font-size: 18px;
   padding: 0 10px;
   color: rgba(30, 20, 0, 0.8);
 }
-body #main-con #body-con #manual-contents .section .category h1 {
+body #main-con #body-con #manual-contents .section .datasets h1 {
   font-family: RoboReg;
   font-size: 14px;
   text-align: center;
@@ -311,22 +311,22 @@ body #main-con #body-con #manual-contents .section .category h1 {
   line-height: 50px;
   color: white;
 }
-body #main-con #body-con #manual-contents .section .category .color {
+body #main-con #body-con #manual-contents .section .datasets .color {
   width: 100%;
   height: 5px;
   position: absolute;
   top: 0px;
 }
-body #main-con #body-con #manual-contents .section .category#bio .color,
-body #main-con #body-con #manual-contents .section .category#bio h1 {
+body #main-con #body-con #manual-contents .section .datasets#health .color,
+body #main-con #body-con #manual-contents .section .datasets#health h1 {
   background: #009b7b;
 }
-body #main-con #body-con #manual-contents .section .category#social .color,
-body #main-con #body-con #manual-contents .section .category#social h1 {
+body #main-con #body-con #manual-contents .section .datasets#sports .color,
+body #main-con #body-con #manual-contents .section .datasets#sports h1 {
   background: #2a528b;
 }
-body #main-con #body-con #manual-contents .section .category#financial .color,
-body #main-con #body-con #manual-contents .section .category#financial h1 {
+body #main-con #body-con #manual-contents .section .datasets#global .color,
+body #main-con #body-con #manual-contents .section .datasets#global h1 {
   background: #880106;
 }
 body #main-con #body-con #instructions {
