@@ -36,11 +36,11 @@ if (isset($_GET['action']) && $_GET['action'] == "log_out") {
     <p>&nbsp;</p>
     <!-- Notice! you have to change this links here, if the files are not in the same folder -->
     <!-- <p><a href="./update_user.php">Update user account</a></p> -->
-    <p><a href="./update_user_profile.php">Update user profile</a></p>
-    <p><a href="./view_submissions.php">View submissions</a></p>
+    <a href="./update_user_profile.php"><div class="user-account">Update user profile</div></a>
+    <a href="./view_submissions.php"><div class="user-account">View submissions</div></a>
     <!-- <p><a href="/classes/access_user/test_access_level.php">test access level </a>(level 5 is used) </p> -->
     <!-- <p><a href="/classes/access_user/admin_user.php">Admin page (user / access level update) </a>(only access for admin accounts with level: <?php echo DEFAULT_ADMIN_LEVEL; ?>) </p> -->
-    <p><a href="<?php echo $_SERVER['PHP_SELF']; ?>?action=log_out">Click here to log out.</a></p>
+    <a href="<?php echo $_SERVER['PHP_SELF']; ?>?action=log_out"><div class="user-account">Click here to log out.</div></a>
 
   </div>
 </div>

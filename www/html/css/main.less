@@ -89,6 +89,7 @@ h3 {
 	font-family: RoboBold;
 	color: fade(@warm, 70%);
 	font-size: 12px;
+	margin: 15px 0;
 }
 
 p, li {
@@ -143,8 +144,61 @@ html {
 	height: 100%;
 }
 
+a {
+	&:hover {
+		text-decoration: none !important
+	}
+	.user-account {
+		float: left;
+		padding: 10px;
+		background: fade(@warm, 50%);
+		color: white;
+		font-family: RoboReg;
+		margin: 0 10px 0 0;
+		.ease();
+		&:hover {
+			background: @blue;
+		}
+		&.secondary {
+			font-size: 12px !important;
+
+		}
+	}
+}
+
+form {
+	div {
+		select {
+			margin: 20px 10px;
+			width: 200px;
+			height: 25px;
+			box-sizing:content-box;
+			border: 1px solid fade(white, 100%);
+			background: fade(@warm, 25%);
+		}
+		label {
+			margin: 10px 0;
+			font-family: RoboReg;
+			color: fade(@warm, 80%);
+		}
+	}
+}
+
 .basic {
 	margin: 0 10%;
+}
+
+p {
+	margin: 10px 0;
+	b {
+		// color: red;
+		font-size: 14px;
+	}
+	&#goodMessage {
+		b {
+			color: @warm;
+		}
+	}
 }
 
 body {
@@ -223,6 +277,12 @@ body {
 		}
 		#body-con {
 			position: relative;
+			a {
+				color: @blue;
+				&:hover {
+					text-decoration: underline !important;
+				}
+			}
 			#download-info {
 				width: 50%;
 				#download-it {
@@ -399,6 +459,8 @@ body {
 				:-ms-input-placeholder {color: white;}
 
 				input {
+					cursor: pointer;
+					color: fade(@warm, 80%);
 					padding: 15px;
 					margin: 5px 0;
 					border: 1px solid white;
@@ -416,7 +478,6 @@ body {
 					font-size: 14px;
 					.anti-aliased();
 					// font-family: RoboReg;
-
 				}
 			}
 		}

@@ -20,7 +20,7 @@ require($_SERVER['DOCUMENT_ROOT']."/classes/access_user/db_config.php");
   </div>  
   <div id="body-con" class="basic">
     <h3>Logged out!</h3>
-    <p><a href="<?php echo LOGIN_PAGE; ?>">Login (again)</a></p>
+    <a href="<?php echo LOGIN_PAGE; ?>"><div class="user-account">Login (again)</div></a>
   </div>
 </div>
 </body>

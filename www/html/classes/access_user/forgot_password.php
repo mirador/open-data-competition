@@ -35,7 +35,7 @@ $error = $renew_password->the_msg;
     <p><b><?php echo (isset($error)) ? $error : "&nbsp;"; ?></b></p>
     <p>&nbsp;</p>
     <!-- Notice! you have to change this links here, if the files are not in the same folder -->
-    <p><a href="<?php echo $renew_password->login_page; ?>">Start</a></p>
+    <a href="<?php echo $renew_password->login_page; ?>"><div class="user-account secondary">Back</div></a>
   </div>
 </div>
 </body>

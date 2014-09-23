@@ -58,6 +58,7 @@ h3 {
   font-family: RoboBold;
   color: rgba(30, 20, 0, 0.7);
   font-size: 12px;
+  margin: 15px 0;
 }
 p,
 li {
@@ -108,8 +109,51 @@ html {
   background: rgba(30, 20, 0, 0.05);
   height: 100%;
 }
+a:hover {
+  text-decoration: none !important;
+}
+a .user-account {
+  float: left;
+  padding: 10px;
+  background: rgba(30, 20, 0, 0.5);
+  color: white;
+  font-family: RoboReg;
+  margin: 0 10px 0 0;
+  webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+a .user-account:hover {
+  background: #278dd2;
+}
+a .user-account.secondary {
+  font-size: 12px !important;
+}
+form div select {
+  margin: 20px 10px;
+  width: 200px;
+  height: 25px;
+  box-sizing: content-box;
+  border: 1px solid #ffffff;
+  background: rgba(30, 20, 0, 0.25);
+}
+form div label {
+  margin: 10px 0;
+  font-family: RoboReg;
+  color: rgba(30, 20, 0, 0.8);
+}
 .basic {
   margin: 0 10%;
+}
+p {
+  margin: 10px 0;
+}
+p b {
+  font-size: 14px;
+}
+p#goodMessage b {
+  color: #1e1400;
 }
 body {
   height: 100%;
@@ -194,6 +238,12 @@ body #main-con #intro.manual h2 {
 }
 body #main-con #body-con {
   position: relative;
+}
+body #main-con #body-con a {
+  color: #278dd2;
+}
+body #main-con #body-con a:hover {
+  text-decoration: underline !important;
 }
 body #main-con #body-con #download-info {
   width: 50%;
@@ -384,6 +434,8 @@ body #main-con #body-con form :-ms-input-placeholder {
   color: white;
 }
 body #main-con #body-con form input {
+  cursor: pointer;
+  color: rgba(30, 20, 0, 0.8);
   padding: 15px;
   margin: 5px 0;
   border: 1px solid white;
