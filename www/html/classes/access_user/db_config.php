@@ -37,9 +37,9 @@ define("VIEW_SUBMISSIONS", APPLICATION_PATH."view_submissions.php");
 // your path must be related to the site root.
  
 // change this constants to the right mail settings
-define("WEBMASTER_MAIL", "andres@broadinsitute.org");
+define("WEBMASTER_MAIL", "andres@broadinstitute.org");
 define("WEBMASTER_NAME", "Andres Colubri");
-define("ADMIN_MAIL", "andres@broadinsitute.org"); 
+define("ADMIN_MAIL", "andres@broadinstitute.org"); 
 define("ADMIN_NAME", "Andres Colubri"); 
 
 // change this vars if you need...
