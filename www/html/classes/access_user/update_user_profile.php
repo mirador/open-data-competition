@@ -49,7 +49,7 @@ if (isset($_POST['Submit'])) {
 <!-- 	<p>This forms is an example how to update the user and user-profile information, 
 	fields with a * are required and keep the password field(s) empty if you don't want to change it.</p>
  -->	
-    <p style="color:#FF0000;font-weight:bold;"><?php echo $update_profile->the_msg; ?>&nbsp;</p>
+    <!-- <p style="color:#FF0000;font-weight:bold;"><?php echo $update_profile->the_msg; ?>&nbsp;</p> -->
 	
 	<form name="form1" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
 	  <!-- <div>
@@ -71,7 +71,8 @@ if (isset($_POST['Submit'])) {
  	 <br>
 <!-- 		*
 	  </div>
- -->	  <?php 
+ -->	  
+      <?php 
 	  echo "<div>".$update_profile->create_form_field_simple("user_full_name", "Full name")."</div>";
 	  echo "<div>".$update_profile->create_form_field_simple("user_email", "Email address")."</div>";
 	  echo "<div>".$update_profile->create_form_field_simple("homepage", "Homepage")."</div>";
@@ -79,7 +80,7 @@ if (isset($_POST['Submit'])) {
 	  // start fields from the profile table
 	  // echo "<div>".$update_profile->create_form_field("field_one", "Company name <br>(user field 1")."</div>";
 	  echo "<div>".$update_profile->create_form_field_simple("address", "Address")."</div>";
-	  echo "<div>".$update_profile->create_form_field_simple("postcode", "Postcode")."</div>";
+	  echo "<div>".$update_profile->create_form_field_simple("postcode", "Postal code")."</div>";
 	  echo "<div>".$update_profile->create_form_field_simple("city", "City")."</div>";
 	  echo "<div>".$update_profile->create_country_menu("Country")."</div>";
 	  

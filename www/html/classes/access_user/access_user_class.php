@@ -552,7 +552,7 @@ class Access_user {
 			$msg[26] = "Passwort-Reset für die Mirador Open Data Competition...";
 			$msg[27] = "Kontrollieren Sie Ihre E-Mailbox und best�tigen Sie Ihre �nderung(en).";
 			$msg[28] = "Aktivieren Sie Ihr Konto für das Mirador Open Data Competition...";
-			$msg[29] = "Hallo,\r\n\r\num Ihre Anfrage zu aktivieren klicken Sie bitte auf den folgenden Link:\r\n".$host.$this->login_page."?ident=".$this->id."&activate=".md5($this->user_pw)."&language=".$this->language."\r\n\r\nmit freundlichen Gr�ssen\r\n".$this->admin_name;
+			$msg[29] = "Hallo,\r\n\r\nIhr Benutzername ist: ".$this->user."\n\num Ihre Anfrage zu aktivieren klicken Sie bitte auf den folgenden Link:\r\n".$host.$this->login_page."?ident=".$this->id."&activate=".md5($this->user_pw)."&language=".$this->language."\r\n\r\nmit freundlichen Gr�ssen\r\n".$this->admin_name;
 			$msg[30] = "Ihre �nderung ist durchgef�hrt.";
 			$msg[31] = "Diese E-mailadresse wird bereits genutzt, bitte w�hlen Sie eine andere.";
 			$msg[32] = "Das Feld Passwort (min. ".PW_LENGTH." Zeichen) muss eingegeben sein.";
@@ -588,7 +588,7 @@ class Access_user {
 			$msg[26] = "Wachtwoord reset voor de Mirador Open Data Competition ...";
 			$msg[27] = "Er is een e-mail is aan u verzonden, volg de instructies die daarin vermeld staan.";
 			$msg[28] = "Activeer je account voor de Mirador Open Data Competition...";
-			$msg[29] = "Hallo,\r\n\r\nBedankt voor uw aanvraag,\r\n\r\nklik op de volgende link om de aanvraag te verwerken:\r\n".$host.$this->login_page."?ident=".$this->id."&activate=".md5($this->user_pw)."&language=".$this->language."\r\n\r\nmet vriendelijke groet\r\n".$this->admin_name;
+			$msg[29] = "Hallo,\r\n\r\nUw gebruikersnaam is: ".$this->user."\n\nklik op de volgende link om de aanvraag te verwerken:\r\n".$host.$this->login_page."?ident=".$this->id."&activate=".md5($this->user_pw)."&language=".$this->language."\r\n\r\nmet vriendelijke groet\r\n".$this->admin_name;
 			$msg[30] = "Uw wijzigingen zijn doorgevoerd.";
 			$msg[31] = "Dit e-mailadres bestaat al, gebruik en andere.";
 			$msg[32] = "Het veld wachtwoord (min. ".PW_LENGTH." teken) mag niet leeg zijn.";
@@ -623,7 +623,7 @@ class Access_user {
 			$msg[26] = "Réinitialisation de mot de passe pour le Mirador Open Data Competition...";
 			$msg[27] = "Veuillez consulter votre email pour activer les modifications.";
 			$msg[28] = "Activez votre compte pour le Mirador Open Data Competition...";
-			$msg[29] = "Bonjour,\r\n\r\npour activer votre account clickez sur le lien suivant:\r\n".$host.$this->login_page."?ident=".$this->id."&activate=".md5($this->user_pw)."&language=".$this->language."\r\n\r\nCordialement\r\n".$this->admin_name;
+			$msg[29] = "Bonjour,\r\n\r\nVotre identifiant est: ".$this->user."\n\nPour activer votre account clickez sur le lien suivant:\r\n".$host.$this->login_page."?ident=".$this->id."&activate=".md5($this->user_pw)."&language=".$this->language."\r\n\r\nCordialement\r\n".$this->admin_name;
 			$msg[30] = "Votre account � �t� modifi�.";
 			$msg[31] = "D�sol�, cette adresse email existe d�j�, veuillez en utiliser une autre.";
 			$msg[32] = "Le champ password (min. ".PW_LENGTH." char) est requis.";
@@ -658,7 +658,7 @@ class Access_user {
 			$msg[26] = "Password reset for the Mirador Open Data Competition..."; 
 			$msg[27] = "Please check your e-mail and activate your modification(s).";
 			$msg[28] = "Activate your account for the Mirador Open Data Competition...";
-			$msg[29] = "Hello,\r\n\r\nTo activate your account click the following link:\r\n\n".$host.$this->login_page."?ident=".$this->id."&activate=".md5($this->user_pw)."&language=".$this->language."\r\n\r\nKind regards\r\n".$this->admin_name;
+			$msg[29] = "Hello,\r\n\r\nYour user name is: ".$this->user."\n\nTo activate your account click the following link:\r\n\n".$host.$this->login_page."?ident=".$this->id."&activate=".md5($this->user_pw)."&language=".$this->language."\r\n\r\nKind regards\r\n".$this->admin_name;
 			$msg[30] = "Your account is modified.";
 			$msg[31] = "This e-mail address already exist, please use another one.";
 			$msg[32] = "The field password (min. ".PW_LENGTH." char) is required.";
