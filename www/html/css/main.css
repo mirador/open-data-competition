@@ -163,17 +163,24 @@ body {
   height: 100%;
 }
 body #main-con {
+  padding: 0 0 20px 0;
   min-width: 600px;
 }
 body #main-con .social-it-up {
+  -webkit-box-shadow: 0px 0px 5px 3px rgba(30, 20, 0, 0.1);
+  -moz-box-shadow: 0px 0px 5px 3px rgba(30, 20, 0, 0.1);
+  box-shadow: 0px 0px 5px 3px rgba(30, 20, 0, 0.1);
   background: white;
   position: fixed;
   right: 0;
   top: 50%;
-  width: 75px;
-  height: 100px;
-  margin-top: -50px;
+  width: 95px;
+  margin-top: -25px;
   z-index: 9999;
+  padding: 10px;
+}
+body #main-con .social-it-up #facebook {
+  margin-top: 5px;
 }
 body #main-con #header-con {
   position: fixed;
@@ -341,7 +348,7 @@ body #main-con #body-con #manual-contents .section .datasets {
   width: 200px;
   height: 200px;
   background: white;
-  margin: 15px 20px 0 0;
+  margin: 20px 20px 0 0;
   -webkit-box-shadow: 0px 0px 5px 3px rgba(30, 20, 0, 0.1);
   -moz-box-shadow: 0px 0px 5px 3px rgba(30, 20, 0, 0.1);
   box-shadow: 0px 0px 5px 3px rgba(30, 20, 0, 0.1);
@@ -498,4 +505,5 @@ body #main-con #footer {
 }
 body #main-con #footer p {
   line-height: 50px;
+  margin: 10px 0;
 }

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>Open Data Competition | Mirador</title>
+	<title>Mirador Open Data Competition</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
 
@@ -22,25 +22,27 @@
 		</div>
 
 		<div class="social-it-up">
-			<div class="social-jam" id="facebook"></div>
-			<div class="social-jam" id="twitter"></div>
+			<div class="social-jam" id="twitter">
+				<div id="twitter" class="sharing">
+					<div class="social-details tw-options">
+						<a id="tw-tweet" href="http://twitter.com/intent/tweet?text=Join%20me%20in%20the%20Mirador%20Open%20Data%20Competition!%20%23MiradorComp%20Begin%20exploring%20and%20visualizing%20the%20big%20datasets%3A&url=http://mirador-competition.info/" target="_blank" class="twitter-share-button">Tweet</a>
+					</div>
+				</div>
+			</div>
+			<div class="social-jam" id="facebook">
+				<div id="facebook" class="sharing">
+					<div class="fb-share-button" data-href="http://mirador-competition.info/" data-width="150" data-type="button_count"></div>
+				</div>
+			</div>
 		</div>
 		
+
 
 		<div id="intro" class="basic manual">
 			<h2>The Mirador Open Data Competition</h2>
 		</div>
 
 		<div id="body-con" class="basic">
-
-			<!-- <div id="twitter" class="sharing">
-				<div class="social-details tw-options">
-					<a id="tw-tweet" href="http://twitter.com/intent/tweet?text=I%20just%20found%20a%20space%20to%20start%20an%20urban%20farm%20in%20Boston!%20Find%20your%20own%20and%20get%20growin%E2%80%99%20%23UrbanAg&url=http://urb.ag" target="_blank" class="twitter-share-button">Tweet</a>
-				</div>
-			</div>
-			<div id="facebook" class="sharing">
-				<div class="fb-share-button" data-href="http://urb.ag/" data-width="150" data-type="button_count"></div>
-			</div> -->
 
 			<div id="manual-contents" class="topic">
 
@@ -177,20 +179,35 @@
 						subject=Mirador:%20feedback&amp;
 						body=Hi%20Andr%C3%A9s%20Colubri%2C%0A%0A%0A%0A
 						">directly by email</a>.</p>
-				</div>
+					</div>
 
-				<div class="section">
-					<h1>Visualizing the competition!</h1>
-					<p>Lastly, there is an art project taking place in parralel with the competition. Every time a new correlation is submitted in Mirador the sequence of steps that lead up to the finding are saved. Once the competition is complete, we will create a visualization of these sequences from all the participants. The goal is to show how exploring data with Mirador is not linear, and unique for all users.</p>
-				</div>				
+					<div class="section">
+						<h1>Visualizing the competition!</h1>
+						<p>Lastly, there is an art project taking place in parralel with the competition. Every time a new correlation is submitted in Mirador the sequence of steps that lead up to the finding are saved. Once the competition is complete, we will create a visualization of these sequences from all the participants. The goal is to show how exploring data with Mirador is not linear, and unique for all users.</p>
+					</div>				
 
-				<div id="footer" class="basic">
-					<p>Copyright © 2014 Fathom Information Design. All Rights Reserved.</p>
+					<div id="footer" class="basic">
+						<p>Copyright © 2014 Fathom Information Design. All Rights Reserved.</p>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</body>
+	</body>
+
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<script>
+	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+</script>
+
 <script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
