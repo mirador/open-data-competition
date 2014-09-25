@@ -11,6 +11,7 @@ $access_denied = new Access_user;
 <meta name="keywords" content="">
 </head>
 <body>
+<?php include_once("analyticstracking.php") ?>
 <h2>Access denied!</h2>
 <p>It's not allowed to your account to view this site!</p>
 <p>&nbsp;</p>

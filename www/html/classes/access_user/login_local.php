@@ -27,6 +27,7 @@ label {
 </head>
 
 <body>
+<?php include_once("analyticstracking.php") ?>
 <h2>Login (with user's language settings):</h2>
 <p>Please enter your login and password.</p>
 <form name="form1" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">

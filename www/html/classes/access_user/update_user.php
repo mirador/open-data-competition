@@ -30,6 +30,7 @@ label {
 </head>
 
 <body>
+<?php include_once("analyticstracking.php") ?>
 <h2>Update user information:</h2>
 <p>Use this form to modify the account information (fields with a * are required).</p>
 <form name="form1" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">

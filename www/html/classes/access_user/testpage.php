@@ -19,6 +19,7 @@ if (isset($_GET['action']) && $_GET['action'] == "log_out") {
 </head>
 
 <body>
+<?php include_once("analyticstracking.php") ?>
 <h2><?php echo "Hello ".$hello_name." !"; ?></h2>
 <p>Now you have access to this testpage.</p>
 <p><?php echo (isset($_SERVER['QUERY_STRING']) && $_SERVER['QUERY_STRING'] != "") ? "Query string: <b>".$_SERVER['QUERY_STRING']."</b>" : "&nbsp;"; ?></p>

@@ -50,6 +50,7 @@ if (isset($_POST['Submit'])) {
 
 
 <body>
+<?php include_once("analyticstracking.php") ?>
 <div id="main-con">
   <div id="header-con">
     <div id="img"></div>

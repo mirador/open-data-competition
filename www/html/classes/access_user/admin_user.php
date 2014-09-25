@@ -119,6 +119,7 @@ label {
 </head>
 
 <body>
+<?php include_once("analyticstracking.php") ?>
 <h2>Admin page (user data)</h2>
 <form name="form1" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
   <?php if ($admin_update->user_found) { ?>

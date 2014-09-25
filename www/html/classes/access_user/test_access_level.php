@@ -17,6 +17,7 @@ if (isset($_GET['action']) && $_GET['action'] == "log_out") {
 </head>
 
 <body>
+<?php include_once("analyticstracking.php") ?>
 <h2><?php echo "Hello ".$hello_name." !"; ?></h2>
 <p>According the access level from your account it's allowed to view this page!</p>
 <p>&nbsp;</p>

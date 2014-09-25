@@ -17,6 +17,7 @@ if (isset($_GET['action']) && $_GET['action'] == "log_out") {
 </head>
 
 <body>
+<?php include_once("analyticstracking.php") ?>
 <h2>User profile example</h2>
 <p>I you see this page a valid profile record exists.</p>
 <p>&nbsp;</p>

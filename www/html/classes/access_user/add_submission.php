@@ -73,6 +73,7 @@ form div {
 </head>
 
 <body>
+<?php include_once("analyticstracking.php") ?>
   <div id="container">
 	<h2>Add submission:</h2>
 	<p>A dummy form for entry into the submissions table. Login required to access this page.</p>

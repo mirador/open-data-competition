@@ -11,6 +11,7 @@ require($_SERVER['DOCUMENT_ROOT']."/classes/access_user/db_config.php");
 </head>
 
 <body>
+<?php include_once("analyticstracking.php") ?>
 <div id="main-con">
   <div id="header-con">
     <div id="img"></div>

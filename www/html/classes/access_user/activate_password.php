@@ -27,6 +27,7 @@ $error = $act_password->the_msg;
 </head>
 
 <body>
+<?php include_once("analyticstracking.php") ?>
 <div id="main-con">
   <div id="header-con">
     <div id="img"></div>
