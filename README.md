@@ -111,6 +111,18 @@ define ("DB_PASSWORD", "password");
 DB_SERVER should remain as localhost, even for the live version of the server, the only 
 change needed is for DB_PASSWORD, which should be the root password of MySQL. 
 
+To avoid users getting the [listing](https://wiki.apache.org/httpd/DirectoryListings) of 
+the subfolders inside the www root remember to edit the apache configuration file 
+/etc/apache2/apache2.conf and remove the Indexes option for /var/wwww:
+
+```
+<Directory /var/www/>
+        Options FollowSymLinks
+        AllowOverride None
+        Require all granted
+</Directory>
+```
+
 4) Change to folder containing the mySQL scripts, which should be /var/www/classes/sql_scripts
 
 5) run mysql as root:
