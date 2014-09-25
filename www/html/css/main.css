@@ -31,6 +31,7 @@ p,
 h1,
 h2,
 h3,
+h4,
 span,
 a,
 li {
@@ -59,6 +60,9 @@ h3 {
   color: rgba(30, 20, 0, 0.7);
   font-size: 12px;
   margin: 15px 0;
+}
+h4 {
+  margin: 20px 0;
 }
 p,
 li {
@@ -330,7 +334,7 @@ body #main-con #body-con #manual-contents .section .datasets {
   width: 200px;
   height: 200px;
   background: white;
-  margin-right: 20px;
+  margin: 10px 20px 0 0;
   -webkit-box-shadow: 0px 0px 5px 3px rgba(30, 20, 0, 0.1);
   -moz-box-shadow: 0px 0px 5px 3px rgba(30, 20, 0, 0.1);
   box-shadow: 0px 0px 5px 3px rgba(30, 20, 0, 0.1);
