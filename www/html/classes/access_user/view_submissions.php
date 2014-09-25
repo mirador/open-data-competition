@@ -19,10 +19,10 @@ if (isset($_POST['Submit'])) {
       $i++;
     }    
 
-    if (3 < $sel_count) {
+    if (10 < $sel_count) {
       // Too many selected submissions, warn the user and don't save changes.
       echo '<script type="text/javascript">';
-      echo 'window.alert("Please select no more than three findings for final evaluation!")';
+      echo 'window.alert("Please select no more than 10 findings for final evaluation!")';
       echo '</script>';
     } else {
       $i = 0;
@@ -70,15 +70,15 @@ if (isset($_POST['Submit'])) {
           echo '<p>Nothing sumbitted yet...</p>';
           return;
       }       
-      if (3 < $view_submission->count) {
-        echo '<p>You can select up to 3 submissions to be evaluated by the jury, please select using checkboxes.</p>';
+      if (10 < $view_submission->count) {
+        echo '<p>You can select up to 10 submissions to be evaluated by the jury, please select using checkboxes.</p>';
         echo '<br>';
       }
 
       echo '<table>';
       echo '<tr>';
       $i = 0;     
-      if (3 < $view_submission->count) echo '<th>SELECTED</th>';
+      if (10 < $view_submission->count) echo '<th>SELECTED</th>';
       echo '<th>DATASET</th>';
       echo '<th>VARIABLE 1</th>';
       echo '<th>VARIABLE 2</th>';
@@ -87,7 +87,7 @@ if (isset($_POST['Submit'])) {
      
       while ($i < $view_submission->count) {
         echo '<tr>';
-        if (3 < $view_submission->count) {
+        if (10 < $view_submission->count) {
           $checked = '';
           if ($view_submission->selected_array[$i]) {
             $checked = 'checked';
@@ -107,7 +107,7 @@ if (isset($_POST['Submit'])) {
     <br>
     <div name="menu">
     <?php
-      if (3 < $view_submission->count) {
+      if (10 < $view_submission->count) {
 	      echo '<input type="submit" name="Submit" value="Update">';
       }
     ?>    	  
