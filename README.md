@@ -154,6 +154,24 @@ Or create all the above tables by running the conglomerated sql script:
 source tables.sql;
 ```
 
+8) It is a good idea to run an automatic backup of the mysql database, [this askubuntu thread](discusses 
+several approaches), one of the simplest seems to be [this script](http://ubuntuforums.org/showthread.php?t=957504&p=8714285#post8714285)
+that invokes mysqldump:
+
+```bash
+#!/bin/bash
+#Script to make a regular copy of a mysql database and gzip it into the SAVEDIR.
+
+USER="authorized_user"
+PASSWORD="the_password"
+DATABASE="database_name"
+SAVEDIR="/backup"
+
+/usr/bin/nice -n 19 /usr/bin/mysqldump -u $USER --password=$PASSWORD --default-character-set=utf8 $DATABASE -c | /usr/bin/nice -n 19 /bin/gzip -9 > $SAVEDIR/$DATABASE-$(date '+%Y%m%d-%H').sql.gz
+```
+
+and put it in the [crontab](https://help.ubuntu.com/community/CronHowto) with a reasonable schedule.
+
 ##Acknowledgments
 
 PHP scripts for user registration Copyright (c) 2004 - 2008, Olaf Lederer
